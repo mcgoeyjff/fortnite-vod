@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fortnite EU VOD Reviews</title>
+
+  <!-- Fortnite-style font -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #1f2937, #030712);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 70px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #7c3aed, #2563eb, #22d3ee);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    header h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(3,7,18,0.9);
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #9ca3af;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover { color: #22d3ee; }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #111827, #020617);
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #22d3ee;
+      margin: 15px 0;
+    }
+
+    button {
+      width: 100%;
+      background: linear-gradient(135deg, #7c3aed, #22d3ee);
+      color: #ffffff;
+      border: none;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 25px rgba(34,211,238,0.35);
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: none;
+      background: #020617;
+      color: white;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #020617;
+      padding: 30px;
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #22d3ee;
+      color: #020617;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Fortnite EU VOD Reviews</h1>
+  <p>EU Fortnite VOD Reviews • Simple • Direct • No Overcomplication</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#submit">Submit</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <div class="card">
+    <span class="badge">WHY THIS WORKS</span>
+    <h2>About</h2>
+    <p>
+      This is a simple EU Fortnite VOD review page. I review real gameplay and point out what to fix for cups and scrims: dropspots, rotations, fights, surge, and endgames. No coach talk, no filler — just what to change next time.
+    </p>
+  </div>
+</section>
+
+<section id="services">
+  <h2>VOD Review Services</h2>
+  <div class="grid">
+
+    <div class="card">
+      <span class="badge">MOST POPULAR</span>
+      <h3>Solo VOD Review</h3>
+      <p class="price">€10</p>
+      <p>• Dropspot mistakes<br>• Midgame decisions<br>• Endgame paths<br>• Fighting review</p>
+      <button onclick="alert('Payment handled via Discord DM for now')">Buy & Submit</button>
+    </div>
+
+    <div class="card">
+      <h3>Duo VOD Review</h3>
+      <p class="price">€15</p>
+      <p>• Team fights<br>• Role clarity<br>• Rotations<br>• Comms review</p>
+      <button onclick="alert('Payment handled via Discord DM for now')">Buy & Submit</button>
+    </div>
+
+    <div class="card">
+      <h3>Tournament Review</h3>
+      <p class="price">€20</p>
+      <p>• Full cup breakdown<br>• Point efficiency<br>• Risk control<br>• Consistency</p>
+      <button onclick="alert('Payment handled via Discord DM for now')">Buy & Submit</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="submit">
+  <div class="card">
+    <h2>Submit Your VOD</h2>
+    <p>Upload your gameplay to YouTube (Unlisted) and fill this out.</p>
+
+    <input placeholder="Epic Games Username" />
+    <input placeholder="Discord Username" />
+    <select>
+      <option>Solo VOD Review</option>
+      <option>Duo VOD Review</option>
+      <option>Tournament Review</option>
+    </select>
+    <input placeholder="YouTube VOD Link" />
+    <textarea rows="5" placeholder="What do you want reviewed specifically?"></textarea>
+
+    <button onclick="copyAndOpenDiscord()">Submit VOD</button>
+<script>
+function copyAndOpenDiscord(){
+  const inputs = document.querySelectorAll('#submit input, #submit textarea, #submit select');
+  let text = 'VOD SUBMISSION
+';
+  inputs.forEach(el=>{ if(el.value) text += el.value + '
+'; });
+  navigator.clipboard.writeText(text);
+  alert('Details copied. Paste them in a Discord DM to alexbumbalex5025_23017');
+  window.open('https://discord.com/app','_blank');
+}
+</script>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <h2>Contact</h2>
+    <p><b>Discord:</b> alexbumbalex5025_23017</p>
+    <p><b>YouTube:</b> Fortnite EU VOD Reviews</p>
+    <p><b>Turnaround:</b> 24–48 hours</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Fortnite EU VOD Reviews • Not affiliated with Epic Games</p>
+</footer>
+
+</body>
+</html>
